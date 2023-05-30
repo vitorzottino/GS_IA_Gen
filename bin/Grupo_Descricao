@@ -1,0 +1,14 @@
+Usar esse arquivo para:
+
+	1) Identificar os membros do grupo
+	
+	2) Apresentar a descrição do projeto desenvolvido
+	Umidade do solo: 0% a 100%
+    pH do solo: 3,5 a 9,5
+    Concentração de potássio: 0 a 1000 ppm
+    Temperatura do solo: -40°C a 80°C
+    Velocidade do vento: 0 a 50 m/s
+    Os intervalos ideais de medidas de sensores para agricultura variam dependendo do tipo de cultura e das
+    condições climáticas. Por exemplo, o intervalo ideal de umidade do solo para a maioria das culturas é de 50% a 80%1.
+    O intervalo ideal de pHdo solo é de 6 a 7 para a maioria das culturas1. O intervalo ideal de temperatura do solo é de
+     20°C a 30°C para a maioria das culturas
