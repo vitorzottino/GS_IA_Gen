@@ -46,7 +46,7 @@ public class Sensores {
         this.umidade = umidadeSolo;
     }
 
-    public float getPh() {
+    public double getPh() {
         return ph;
     }
 
@@ -76,7 +76,7 @@ public class Sensores {
     @Override
     public String toString() {
         return "\nID Sensor: " + idSensor + "\nCordenadas: " + coordenadas + "\nUmidade: " + umidade
-                + "\nPH: " + ph + "\nPotassio: " + potassio + "\nTemperatura: " + temperatura;
+                + "\nPH: " + ph + "\nPotassio: " + potassio + "\nTemperatura do Solo: " + temperatura;
     }
 
 }

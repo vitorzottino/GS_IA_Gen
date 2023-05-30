@@ -52,6 +52,14 @@ public class FilaSensoresAnomalia {
             aux = aux.prox;
         }
     }
+    
+    public void esvaziar() {	
+    	while(ini != null) {
+    		ini = ini.prox;
+    		
+    	}
+    	
+    }
 
     public int contaNos() {
 
