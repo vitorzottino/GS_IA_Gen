@@ -69,7 +69,7 @@ public class ListaSensoresDesc {
 		return achou;
 	}
 
-	public int contaNos() {
+	public int length() {
 
 		int cont = 0;
 		NO aux = lista;
@@ -100,7 +100,7 @@ public class ListaSensoresDesc {
 			}
 		}
 		if (achou == false)
-			System.out.println("Nao encontrado!");
+			System.out.println("Sensor não cadastrado");
 		return null;
 	}
 
@@ -112,13 +112,24 @@ public class ListaSensoresDesc {
 				int temp = aux.dado.getTemperatura();
 				double ph = aux.dado.getPh();
 				int umidade = aux.dado.getUmidade();
+				int anomalias = 0;
 
-				if (temp > MAXTEMP || ph > MAXPH || umidade > MAXUMIDADE || temp < MINTEMP || ph < MINPH
-						|| umidade < MINUMIDADE) {
-
+				if (temp > MAXTEMP || temp < MINTEMP) {
+					anomalias += 1;
+					
+				}
+				if (ph > MAXPH || ph < MINPH) {
+					anomalias += 1;
+				}
+				if (umidade > MAXUMIDADE || umidade < MINUMIDADE) {
+					anomalias += 1;
+				}
+				
+				if(anomalias >= 2) {
 					listaDeAnomalia.enqueue(aux.dado);
 				}
 
+				
 				aux = aux.prox;
 			}
 		}
@@ -138,8 +149,8 @@ public class ListaSensoresDesc {
 
 		NO aux = lista;
 		while (aux != null) {
-			float ph = (float)(MINPH + r.nextDouble() * (MAXPH - MINPH));
-			int umidade = r.nextInt(MAXUMIDADE) + MINUMIDADE;
+			float ph = (float)(MINPH + r.nextDouble() * (MAXPH - MINPH) + 1.5);
+			int umidade = 5 + r.nextInt(MAXUMIDADE) + MINUMIDADE;
 			int temp = r.nextInt(40);
 			int potassio = r.nextInt(1000);
 			aux.dado.setPh(ph);

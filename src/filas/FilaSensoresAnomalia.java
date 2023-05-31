@@ -61,7 +61,7 @@ public class FilaSensoresAnomalia {
     	
     }
 
-    public int contaNos() {
+    public int length() {
 
         int cont = 0;
         NO aux = ini;

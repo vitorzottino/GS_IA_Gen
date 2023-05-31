@@ -72,7 +72,7 @@ public class TesteApp {
 				break;
 			case 2:
 				listaSensores.apresenta();
-				System.out.println("Sensores encontrados: " + listaSensores.contaNos());
+				System.out.println("Sensores encontrados: " + listaSensores.length());
 				break;
 			case 3:
 				String cordenadaProcurada = null;
@@ -84,7 +84,7 @@ public class TesteApp {
 			case 4:
 				filaSensoresAnomalia = listaSensores.procurarAnomalia();
 				filaSensoresAnomalia.apresenta();
-				System.out.println("Anomalias encontradas: " + filaSensoresAnomalia.contaNos());
+				System.out.println("Anomalias encontradas: " + filaSensoresAnomalia.length());
 
 				break;
 			case 5:

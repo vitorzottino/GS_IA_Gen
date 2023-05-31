@@ -14,8 +14,5 @@ Usar esse arquivo para:
      * Temperatura do solo: 8°C a 35°C 	https://www.embrapa.br/agencia-de-informacao-tecnologica/cultivos/cenoura/pre-producao/clima
      * Velocidade do vento: 0 a 50 m/s
      
-    Os intervalos ideais de medidas de sensores para agricultura variam dependendo do tipo
-    de cultura e das condi��es clim�ticas. Por exemplo, o intervalo ideal de umidade do solo
-  	para a maioria das culturas � de 50% a 80%.
-    O intervalo ideal de pHdo solo e de 6 a 7 para a maioria das culturas. O intervalo ideal
-    de temperatura do solo e de 20°C a 30°C para a maioria das culturas
+    O projeto foi desenvolvido com a finalidade de simular aferições de sensores implantados no solo, capazes de detectar anomalias.
+    Nele, o usuario alem de consultar os sensores pré instalados, também é capaz de inserir os seus proprios sensores.
